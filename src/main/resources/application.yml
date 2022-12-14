@@ -1,0 +1,4 @@
+server:
+    port: 3434
+web-client-config:
+    uri: https://dummyjson.com/
