@@ -8,7 +8,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Component
 public class UserClient {
 
-    WebClient webClient;
+    WebClient webClient ;
 
     Properties properties;
 
@@ -19,7 +19,7 @@ public class UserClient {
 
     public Json json() {
         return webClient.get()
-                .uri("products/2")
+                .uri("products/9")
                 .retrieve()
                 .bodyToMono(Json.class)
                 .block();
